@@ -9,16 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@react-three/drei": "^9.74.6",
+    "@react-three/fiber": "^8.13.0",
+    "@reduxjs/toolkit": "^1.9.5",
     "@types/node": "20.2.5",
     "@types/react": "18.2.8",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
+    "maath": "^0.6.0",
     "next": "13.4.4",
+    "next-auth": "^4.22.1",
+    "next-themes": "^0.2.1",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-redux": "^8.0.7",
+    "react-spinkit": "^3.0.0",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.3"
   }
