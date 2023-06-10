@@ -5,6 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -35,7 +36,10 @@ module.exports = {
         slidedown: "slidedown 1s ease-in-out",
         slidedown2: "slidedown2 1.8s ease-in-out",
         slidelefttranfrom: "slidelefttranfrom 1.5s ease-in-out",
-        slideleft: "slideleft 0.7s ease-in-out",
+        slideleft: "slideleft 1.2s ease-in-out",
+        slideleftT2: "slideleft 1.6s ease-in-out",
+        slideleftT3: "slideleft 2s ease-in-out",
+        slideleftT4: "slideleft 2.4s ease-in-out",
         slideleft0: "slideleft 0.3s ease-in-out",
         slideleft3: "slideleft3 1s ease-in-out",
         slideleft4: "slideleft3 2.3s ease-in-out",
@@ -54,6 +58,7 @@ module.exports = {
         slowfadehidden: "slowfadehidden 2s ease-in-out",
         slowspin: "slowspin 0.2s linear infinite",
         Fastspin: "slowspin 2.5s linear infinite",
+        VerySlowspin: "slowspin 3.5s linear infinite",
         pluseCustom: "pluseCustom 1s linear infinite",
       },
       keyframes: {
@@ -102,7 +107,7 @@ module.exports = {
           to: { opacity: 1, transform: "none" },
         },
         slideleft: {
-          from: { opacity: 0, transform: "translateX(-140px)" },
+          from: { opacity: 0, transform: "translateX(-250px)" },
           to: { opacity: 1, transform: "translateX(0)" },
         },
         slidelefttranfrom: {

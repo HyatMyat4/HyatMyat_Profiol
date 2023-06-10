@@ -5,13 +5,43 @@
 
 @layer components {
   .Nav_text {
-    @apply text-sm text-gray-300 hover:text-gray-50 cursor-pointer;
+    @apply text-sm text-black dark:text-gray-300  hover:text-[black] dark:hover:text-gray-50 cursor-pointer animate-slowfade;
   }
   .Home_a {
     @apply text-sky-400 hover:underline cursor-pointer underline-offset-4  mx-[2px];
+  }
+  .transition_ {
+    @apply transition-all  duration-700;
   }
 }
 
 #cursive {
   font-family: "Cedarville Cursive", cursive;
+}
+#Wecom-text {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
+  background-blend-mode: normal, screen;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#Wecom-box {
+  isolation: isolate;
+  overflow: hidden;
+  align-items: center;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 32px;
+  box-shadow: inset 0 -7px 11px #a48fff1f;
+  display: flex;
+
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
 }
