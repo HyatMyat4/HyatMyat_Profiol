@@ -417,53 +417,43 @@ export const Other_skill3: Skill_data[] = [
 
 export const Project: Project_data[] = [
   {
-    title: "Morden 3 js Profiol",
-    video_key: "6wzf2ho-kzI",
-    say_xi: "Hello my friend! 👋🏼",
+    title: "Morden Next js 13 Profiol",
+    video_key: "AxQ_Eli8gtk",
+    say_xi: "Xi Have a Gread Day ☘️ ",
     say_xi_blog:
-      "This is a Normal 3 js Responsive Profiol Website Constain Starts Mode , Background Music , Day and Light Mode , Contain youtube emb video like youtube Mobile Responsive desing Base on Vite ",
+      "This is My Profiol Project For Showcase , basic Ui interface and Contain Basic Animation & Authentication  ",
     technology_feature: [
-      "html",
-      "css",
-      "Javascript",
       "Tailwind",
       "React",
       "Redux",
-      "Threes js",
-      "Fraimer Motion",
+      "Next js 13",
+      "Type Script",
+      "Framer Motion",
     ],
     about_this_app:
-      "This Responsive  Website is Make for showcase Project Profile ",
-    design_blog:
-      "very basic desing from My Friends , and I ReModified It All Code & Desing by Me ",
+      "Contain StarMode , Drop Down NavBar , Authentication Google , Facebook , Github , Instgram , Custom Star Colour Basic Animation With Fraimer Motion , Conatin Embed Youtube Video ",
+    design_blog: " Ui/Ux Desing & All Code Written by Me  ",
     dependencies_blog:
-      "You can use Yarn or NPM to install the dependencies. In this case I use npm beacuse We use older npm package .",
+      "You can use Yarn or NPM to install the dependencies. In this case I am use NPM",
     package: [
-      " maath",
-      " @react-three/fiber",
-      " @emailjs/browser",
-      " framer-motion",
-      " @react-three/fiber ",
-      " @reduxjs/toolkit ",
-      " react-router-dom",
-      " react-tilt",
-      " react-simple-typewriter",
-      " react-icons",
-      " react-spinkit",
-      " react-vertical-timeline-component",
-      " three",
+      "@heroicons/react",
+      "@react-three/drei",
+      "@react-three/fiber",
+      "@reduxjs/toolkit",
+      "framer-motion",
+      "maath",
+      "react-redux",
     ],
-    conclusion_blog:
-      "As I said at the beginning, this is a great project for begginers and even for those who are not new to React . I bealive this is a grat project to have in a resume or portfolio. I am very happy with the app and I hope you will enjoy it as well.",
-    youtube_link: "https://youtu.be/6wzf2ho-kzI",
+    conclusion_blog: "",
+    youtube_link: "https://youtu.be/v3LJMcWbcDQ",
     githhub_link: "https://github.com/HyatMyat4",
     frontend_dowload_link:
-      "https://github.com/HyatMyat4/Profiol_2/archive/refs/heads/main.zip",
+      "https://github.com/HyatMyat4/HyatMyat_Profiol/archive/refs/heads/main.zip",
     backend_dowload_link: "",
-    project_image: "/Untitled-1.png",
+    project_image: "/profiol3.png",
     project_blog:
-      "Morden Profiol Wbsite With Javascript | React | Tailwind css | Responsive Website profiol desing.",
-    Type: "React",
+      "Contain StarMode , Authentication Google , Facebook , Github , Instgram , Custom Star Colour Basic Animation With Fraimer Motion",
+    Type: "Next js 13",
     indevelopment: false,
   },
   {
@@ -817,7 +807,56 @@ export const Project: Project_data[] = [
     Type: "Next js 13",
     indevelopment: false,
   },
-
+  {
+    title: "Morden 3 js Profiol",
+    video_key: "6wzf2ho-kzI",
+    say_xi: "Hello my friend! 👋🏼",
+    say_xi_blog:
+      "This is a Normal 3 js Responsive Profiol Website Constain Starts Mode , Background Music , Day and Light Mode , Contain youtube emb video like youtube Mobile Responsive desing Base on Vite ",
+    technology_feature: [
+      "html",
+      "css",
+      "Javascript",
+      "Tailwind",
+      "React",
+      "Redux",
+      "Threes js",
+      "Framer Motion",
+    ],
+    about_this_app:
+      "This Responsive  Website is Make for showcase Project Profile ",
+    design_blog:
+      "very basic desing from My Friends , and I ReModified It All Code & Desing by Me ",
+    dependencies_blog:
+      "You can use Yarn or NPM to install the dependencies. In this case I use npm beacuse We use older npm package .",
+    package: [
+      " maath",
+      " @react-three/fiber",
+      " @emailjs/browser",
+      " framer-motion",
+      " @react-three/fiber ",
+      " @reduxjs/toolkit ",
+      " react-router-dom",
+      " react-tilt",
+      " react-simple-typewriter",
+      " react-icons",
+      " react-spinkit",
+      " react-vertical-timeline-component",
+      " three",
+    ],
+    conclusion_blog:
+      "As I said at the beginning, this is a great project for begginers and even for those who are not new to React . I bealive this is a grat project to have in a resume or portfolio. I am very happy with the app and I hope you will enjoy it as well.",
+    youtube_link: "https://youtu.be/6wzf2ho-kzI",
+    githhub_link: "https://github.com/HyatMyat4",
+    frontend_dowload_link:
+      "https://github.com/HyatMyat4/Profiol_2/archive/refs/heads/main.zip",
+    backend_dowload_link: "",
+    project_image: "/Untitled-1.png",
+    project_blog:
+      "Morden Profiol Wbsite With Javascript | React | Tailwind css | Responsive Website profiol desing.",
+    Type: "React",
+    indevelopment: false,
+  },
   {
     title: "ApexLegnds.com ( Clone )",
     video_key: "IqYbA6ZZ-e4",

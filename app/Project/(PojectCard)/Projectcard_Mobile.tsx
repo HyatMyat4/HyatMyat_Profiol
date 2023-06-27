@@ -26,50 +26,68 @@ function Projectcard_Mobile({ data, index }: Props) {
         </div>
         <div className="w-full h-auto hidden 1280:flex flex-row items-center justify-between ">
           {data.project_Img_Mobile?.map((data: string) => (
-            <Image
+            <div
               key={data}
-              src={data}
-              width={1920}
-              height={1080}
-              alt="image"
-              className="w-[200px] h-auto rounded-[10px] cursor-pointer "
-            />
+              className="border-[2px] px-[5px] py-[6px] border-[#343434] relative group overflow-hidden  bg-black rounded-[15px]"
+            >
+              <Image
+                src={data}
+                width={1920}
+                height={1080}
+                alt="image"
+                className="w-[200px] h-auto rounded-[10px] cursor-pointer "
+              />
+            </div>
           ))}
         </div>
         <div className="w-full h-auto hidden 720:flex  1280:hidden flex-row items-center justify-between ">
           {data.project_Img_Mobile?.slice(0, 3)?.map((data: string) => (
-            <Image
+            <div
               key={data}
-              src={data}
-              width={1920}
-              height={1080}
-              alt="image"
-              className="w-[200px] h-auto rounded-[10px] cursor-pointer "
-            />
+              className="border-[2px] px-[5px] py-[6px] border-[#343434] relative group overflow-hidden  bg-black rounded-[15px]"
+            >
+              <Image
+                key={data}
+                src={data}
+                width={1920}
+                height={1080}
+                alt="image"
+                className="w-[200px] h-auto rounded-[10px] cursor-pointer "
+              />
+            </div>
           ))}
         </div>
         <div className="w-full h-auto hidden 660:flex 720:hidden   flex-row items-center justify-between ">
           {data.project_Img_Mobile?.slice(0, 2)?.map((data: string) => (
-            <Image
+            <div
               key={data}
-              src={data}
-              width={1920}
-              height={1080}
-              alt="image"
-              className="w-[280px] h-auto rounded-[10px] cursor-pointer "
-            />
+              className="border-[2px] px-[5px] py-[6px] border-[#343434] relative group overflow-hidden  bg-black rounded-[15px]"
+            >
+              <Image
+                src={data}
+                width={1920}
+                height={1080}
+                alt="image"
+                className="w-[280px] h-auto rounded-[10px] cursor-pointer "
+              />
+            </div>
           ))}
         </div>
         <div className="w-full h-auto flex 660:hidden   flex-row items-center  justify-center ">
           {data.project_Img_Mobile?.slice(0, 1)?.map((data: string) => (
-            <Image
+            <div
               key={data}
-              src={data}
-              width={1920}
-              height={1080}
-              alt="image"
-              className="w-[300px] h-auto rounded-[10px] cursor-pointer "
-            />
+              className="border-[2px] px-[5px] py-[6px] border-[#343434] relative group overflow-hidden  bg-black rounded-[15px]"
+            >
+              <Image
+                key={data}
+                src={data}
+                width={1920}
+                height={1080}
+                alt="image"
+                className="w-[300px] h-auto rounded-[10px] cursor-pointer "
+              />
+            </div>
           ))}
         </div>
         <div>

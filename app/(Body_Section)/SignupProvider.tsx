@@ -33,14 +33,17 @@ function SignupProvider() {
           AuthName={"Sign up with Github  "}
           providers_Name={"github"}
         />
-        <AuthButtons
-          AuthImage={"/5296765_camera_instagram_instagram logo_icon.png"}
-          AuthName={"Sign up with Instgram  "}
-          providers_Name={"instgram"}
-        />
       </div>
     </div>
   );
 }
 
 export default SignupProvider;
+
+/*
+      <AuthButtons
+          AuthImage={"/5296765_camera_instagram_instagram logo_icon.png"}
+          AuthName={"Sign up with Instgram  "}
+          providers_Name={"instgram"}
+        />
+*/

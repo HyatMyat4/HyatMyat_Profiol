@@ -1,6 +1,5 @@
 import React from "react";
 
-
 interface Props {
   data: Project_data;
 }
@@ -145,8 +144,15 @@ function Technology_tag({ data }: Props) {
       </div>
       <div
         className={`tag ${
+          data.technology_feature.includes("Framer Motion") ? "" : " hidden"
+        }  bg-[#ff13ffd3]   text-[#fdfdfd] `}
+      >
+        Framer Motion
+      </div>
+      <div
+        className={`tag ${
           data.technology_feature.includes("Graphql") ? "" : " hidden"
-        }  bg-[#E632AD]    text-[#fdfdfd] `}
+        }   bg-[#E632AD]     text-[#fdfdfd] `}
       >
         Graphql
       </div>

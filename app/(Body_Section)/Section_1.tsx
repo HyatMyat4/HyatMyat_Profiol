@@ -38,7 +38,7 @@ function Section_1() {
       colour === null
     ) {
       localStorage.setItem("starMode", "active");
-      localStorage.setItem("colour", "#7e22ce");
+      localStorage.setItem("colour", "#4d7c0f");
     } else {
       dispatch(setStarMode(havestarMode));
       dispatch(setStarColur(colour));
