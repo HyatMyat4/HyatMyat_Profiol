@@ -3,22 +3,21 @@ import React, { useState } from "react";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { setMobileMenu } from "../../../Redux-store/Redux-action";
-import { useDispatch }   from "react-redux";
-import MoreMobile        from "./MoreMobile";
-import Link              from "next/link";
-import Image             from "next/image";
+import { useDispatch } from "react-redux";
+import MoreMobile from "./MoreMobile";
+import Link from "next/link";
+import Image from "next/image";
 
 function MobileMenu() {
-
   const [course, setcourse] = useState<boolean>(false);
-  const [More, setMore]     = useState<boolean>(false);
-  const dispatch            = useDispatch();
+  const [More, setMore] = useState<boolean>(false);
+  const dispatch = useDispatch();
 
   return (
     <div
       id="scroolbar-hidden"
       className={` group  flex flex-col items-center 860:hidden cursor-pointer animate-slideleft overflow-y-scroll  shadow-lg shadow-[#2A0E61]/50  fixed inset-x-0 bottom-0
-       z-[999] w-[80%] 500:w-[60%] h-full  text-gray-300  bg-white dark:bg-slate-950 
+       z-[999] w-[80%] 500:w-[60%] h-full  text-gray-300  bg-slate-950 
        pb-5 sm:hidden px-[15px] `}
     >
       <div className="w-full min-h-[60px] flex flex-row items-center  justify-between">
