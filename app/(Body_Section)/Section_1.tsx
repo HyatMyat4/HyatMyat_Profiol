@@ -1,15 +1,55 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { SparklesIcon } from "@heroicons/react/24/solid";
-import { fadeIn, textVariant } from "../../utils/motion";
+import Section1_text from "./Section1_text";
+import { Skill_data } from "../../utils/constants";
+import Skill_data_provider from "./Skill_data_provider";
+import SignupProvider from "./SignupProvider";
+import Section_2 from "./Section_2";
+import {
+  Signup_data,
+  Image_src_data,
+  MobileMenu_data,
+} from "../../Redux-store/Redux-action";
+import { useSelector, useDispatch } from "react-redux";
+import Scale_Image from "./(ScaleImg)/Scale_Image";
+import { useEffect } from "react";
+import { setStarMode, setStarColur } from "../../Redux-store/Redux-action";
+import MobileMenu from "./(MobileMenu)/MobileMenu";
+interface Props {
+  data: string;
+  isMobile: boolean;
+}
+
 function Section_1() {
+  const dispatch = useDispatch();
+  const Signup: boolean = useSelector(Signup_data);
+  const Mobilemenu: boolean = useSelector(MobileMenu_data);
+  const ImageSrc: Props = useSelector(Image_src_data);
+
+  useEffect(() => {
+    const havestarMode = localStorage.getItem("starMode");
+    const colour = localStorage.getItem("colour");
+    if (
+      havestarMode === "" ||
+      havestarMode === null ||
+      havestarMode === undefined ||
+      colour === "" ||
+      colour === undefined ||
+      colour === null
+    ) {
+      localStorage.setItem("starMode", "active");
+      localStorage.setItem("colour", "#7e22ce");
+    } else {
+      dispatch(setStarMode(havestarMode));
+      dispatch(setStarColur(colour));
+    }
+  }, []);
+
   return (
-    <div className=" w-full h-[910px] relative  flex flex-col  items-center justify-start">
-      <div className="w-full h-full z-[-10] absolute flex flex-col items-center justify-center ">
+    <section className=" w-full h-[940px] shadow-lg shadow-[#030014]/50  relative bg-[url('/main.svg')] bg-cover flex flex-col overflow-hidden  items-center justify-start  px-[15px] ">
+      <div className=" w-[1250px]  h-full z-[-10] absolute   top-[-280px]  flex flex-row   items-start justify-center ">
         <video
-          className="w-full h-auto"
+          className="w-full h-auto  rotate-180  "
           preload="false"
           playsInline
           loop
@@ -18,32 +58,12 @@ function Section_1() {
           autoPlay="autoplay"
           src="/q-c3d7becf.webm"
         ></video>
-        <div className="w-full h-[448px] bg-gradient-to-t from-black border border-[#7042f88b]  blur-sm  absolute bottom-[0px] rounded-[20px] "></div>
       </div>
-      <div className="w-full h-auto flex flex-col z-[-2] items-center justify-center mt-[120px]">
-        <motion.div
-          variants={textVariant(0)}
-          id="Wecom-box"
-          className=" px-[15px] py-[4px]  border border-[#7042f88b] opacity-[0.9]  "
-        >
-          <SparklesIcon className="h-5 w-5 text-[#b49bff] mr-[10px]" />
-          <div id="Wecom-text">Joiner Full Stack Software Engineer</div>
-        </motion.div>
-        <motion.div
-          variants={textVariant(1)}
-          className=" text-[60px] font-medium mt-[10px]"
-        >
-          Think better with Next js 13
-        </motion.div>
-        <motion.div
-          variants={textVariant(2)}
-          className=" text-[20px] text-gray-200  mt-[10px]"
-          id="cursive"
-        >
-          Never miss a note , idea or connection.
-        </motion.div>
-      </div>
-    </div>
+      <Section_2 />
+      {Signup ? <SignupProvider /> : <div></div>}
+      {Mobilemenu ? <MobileMenu /> : <div></div>}
+      {ImageSrc.data ? <Scale_Image src_data={ImageSrc} /> : <div></div>}
+    </section>
   );
 }
 

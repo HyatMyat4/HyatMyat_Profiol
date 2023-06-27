@@ -85,11 +85,16 @@ export const slideIn = (
   };
 };
 
-export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
+export const staggerContainer = (
+  staggerChildren: any,
+  delayChildren: number
+) => {
   return {
     hidden: {},
     show: {
       transition: {
+        type: "spring",
+        duration: 1.25,
         staggerChildren: staggerChildren,
         delayChildren: delayChildren || 0,
       },

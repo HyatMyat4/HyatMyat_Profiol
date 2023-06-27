@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+//@ts-ignore
 import { useTheme } from "next-themes";
 
 import { useState, useEffect } from "react";

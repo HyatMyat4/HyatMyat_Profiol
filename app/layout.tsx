@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Provider from "./(Provider)/Provider";
+import Navbar from "./(Nav_components)/Navbar";
+import StarsCanvas from "./(StarMode)/Background_Stars";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` bg-[#F1F1F1] dark:bg-[#030014]  transition_ ${inter.className}`}
+        className={` bg-[#030014] overflow-y-scroll overflow-x-hidden  transition_ ${inter.className}`}
       >
-        <Provider>{children}</Provider>
+        <Provider>
+          <StarsCanvas />
+          <Navbar />
+          {children}
+        </Provider>
       </body>
     </html>
   );
