@@ -8,12 +8,11 @@ interface Props {
   providers_Name: string;
 }
 function AuthButtons({ AuthImage, AuthName, providers_Name }: any) {
-  
   return (
     <div
       key={providers_Name}
       onClick={() =>
-        signIn(providers_Name, { callbackUrl: "http://localhost:3000" })
+        signIn(providers_Name, { callbackUrl: "https://hyat-myat.vercel.app/" })
       }
       id="button-primary"
       className=" w-full 420:w-[380px] p-[10px]  h-[60px] mt-[20px] flex 225:inline flex-row items-center justify-center select-none cursor-pointer rounded-[10px] 225:pl-[20px] "
