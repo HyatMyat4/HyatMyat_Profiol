@@ -21,7 +21,6 @@ function Projectpagebody() {
     data.title.toLowerCase().includes(Search_query.toLowerCase())
   );
 
-  console.log(Search_data, "Search_data");
   return (
     <div className="w-full h-screen">
       {Search_query.length ? (
