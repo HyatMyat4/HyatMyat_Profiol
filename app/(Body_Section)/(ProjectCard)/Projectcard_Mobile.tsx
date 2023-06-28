@@ -30,7 +30,7 @@ function Projectcard_Mobile({ data, index }: Props) {
           {data.project_Img_Mobile?.map((data: string) => (
             <div
               key={data}
-              className="border-[2px] px-[5px] py-[6px] border-[#343434] relative group overflow-hidden  bg-black rounded-[15px]"
+              className="border-[2px] px-[5px] py-[6px] border-[#343434] relative group overflow-hidden  bg-black rounded-[25px]"
             >
               <div
                 onClick={() =>
@@ -43,7 +43,7 @@ function Projectcard_Mobile({ data, index }: Props) {
                 width={1920}
                 height={1080}
                 alt="image"
-                className="w-[200px] h-auto rounded-[10px] cursor-pointer "
+                className="w-[200px] h-auto rounded-[20px] cursor-pointer "
               />
             </div>
           ))}
@@ -52,7 +52,7 @@ function Projectcard_Mobile({ data, index }: Props) {
           {data.project_Img_Mobile?.slice(0, 3)?.map((data: string) => (
             <div
               key={data}
-              className="border-[2px] px-[5px] py-[6px] border-[#343434] relative group overflow-hidden  bg-black rounded-[15px]"
+              className="border-[2px] px-[5px] py-[6px] border-[#343434] relative group overflow-hidden  bg-black rounded-[25px]"
             >
               <Image
                 onClick={() =>
@@ -62,7 +62,7 @@ function Projectcard_Mobile({ data, index }: Props) {
                 width={1920}
                 height={1080}
                 alt="image"
-                className="w-[200px] h-auto rounded-[10px] cursor-pointer "
+                className="w-[200px] h-auto rounded-[20px] cursor-pointer "
               />
             </div>
           ))}
@@ -71,7 +71,7 @@ function Projectcard_Mobile({ data, index }: Props) {
           {data.project_Img_Mobile?.slice(0, 2)?.map((data: string) => (
             <div
               key={data}
-              className="border-[2px] px-[5px] py-[6px] border-[#343434] relative group overflow-hidden  bg-black rounded-[15px]"
+              className="border-[2px] px-[5px] py-[6px] border-[#343434] relative group overflow-hidden  bg-black rounded-[25px]"
             >
               <div
                 onClick={() =>
@@ -85,7 +85,7 @@ function Projectcard_Mobile({ data, index }: Props) {
                 width={1920}
                 height={1080}
                 alt="image"
-                className="w-[280px] h-auto rounded-[10px] cursor-pointer "
+                className="w-[280px] h-auto rounded-[20px] cursor-pointer "
               />
             </div>
           ))}
@@ -94,7 +94,7 @@ function Projectcard_Mobile({ data, index }: Props) {
           {data.project_Img_Mobile?.slice(0, 1)?.map((data: string) => (
             <div
               key={data}
-              className="border-[2px] px-[5px] py-[6px] relative border-[#343434]  group overflow-hidden  bg-black rounded-[15px]"
+              className="border-[2px] px-[5px] py-[6px] relative border-[#343434]  group overflow-hidden  bg-black rounded-[25px]"
             >
               <div
                 onClick={() =>
@@ -108,7 +108,7 @@ function Projectcard_Mobile({ data, index }: Props) {
                 width={1920}
                 height={1080}
                 alt="image"
-                className="w-[300px] h-auto rounded-[10px] cursor-pointer "
+                className="w-[300px] h-auto rounded-[20px] cursor-pointer "
               />
             </div>
           ))}

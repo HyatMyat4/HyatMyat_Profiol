@@ -25,13 +25,13 @@ function Scale_Image({ src_data }: Props) {
       </div>
       <div className="w-full h-full flex flex-row items-center justify-center">
         {src_data.isMobile ? (
-          <div className="w-[480px] h-auto border-[2px] px-[8px] py-[10px] border-[#343434] relative group overflow-hidden  bg-black rounded-[25px]  ">
+          <div className="w-[480px] h-auto border-[2px] px-[8px] py-[12px] border-[#343434] relative group overflow-hidden  bg-black rounded-[35px]  ">
             <Image
               alt=""
               src={src_data.data}
               width={1920}
               height={1080}
-              className="w-full h-auto  rounded-[20px]"
+              className="w-full h-auto  rounded-[25px]"
             />
           </div>
         ) : (

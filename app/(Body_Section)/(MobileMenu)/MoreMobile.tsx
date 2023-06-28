@@ -17,7 +17,7 @@ function MoreMobile() {
 
   const StarModeStatus = () => {
     const status = localStorage.getItem("starMode");
-    
+
     if (status === "active") {
       dispatch(setStarMode("disable"));
       localStorage.setItem("starMode", "disable");

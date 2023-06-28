@@ -14,7 +14,6 @@ function Dependencies({ Single_data }: Props) {
   const [havecopy, sethavecopy] = useState<boolean>(false);
 
   const Copy = (e: any) => {
-    console.log(e, "############");
     sethavecopy(true);
     navigator.clipboard.writeText(e);
     const myTimeout = setTimeout(myStopFunction, 5000);
@@ -25,7 +24,7 @@ function Dependencies({ Single_data }: Props) {
   };
 
   const copydata = Single_data.package.map((data) => data);
-  console.log(copydata, "Data");
+
   return (
     <div className="w-full h-auto">
       <span className=" my-[20px] font-bold text-slate-200 text-[23px] ">

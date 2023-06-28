@@ -152,11 +152,10 @@ export const Skill_data: Skill_data[] = [
     hight: 70,
   },
   {
-    skill_name: "Kubernetes",
-    Image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/2109px-Kubernetes_logo_without_workmark.svg.png",
-    width: 70,
-    hight: 70,
+    skill_name: "Figma",
+    Image: "/figma.png",
+    width: 50,
+    hight: 50,
   },
   {
     skill_name: "Web Scoket",
@@ -333,15 +332,14 @@ export const Full_stack: Skill_data[] = [
     skill_name: "Nigx",
     Image:
       "https://i0.wp.com/thinkground.studio/wp-content/uploads/2019/04/190415_Nginx-Logo.png?fit=423%2C401&ssl=1",
-    width: 70,
-    hight: 70,
+    width: 60,
+    hight: 60,
   },
   {
-    skill_name: "Kubernetes",
-    Image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/2109px-Kubernetes_logo_without_workmark.svg.png",
-    width: 70,
-    hight: 70,
+    skill_name: "Figma",
+    Image: "/figma.png",
+    width: 50,
+    hight: 50,
   },
   {
     skill_name: "Web Scoket",
