@@ -418,7 +418,7 @@ export const Other_skill3: Skill_data[] = [
 export const Project: Project_data[] = [
   {
     title: "Morden Next js 13 Profiol",
-    video_key: "AxQ_Eli8gtk",
+    video_key: "HvkrAjHJ-38",
     say_xi: "Xi Have a Gread Day ☘️ ",
     say_xi_blog:
       "This is My Profiol Project For Showcase , basic Ui interface and Contain Basic Animation & Authentication  ",
