@@ -13,10 +13,7 @@ interface Props {
 function Projectcard_Mobile({ data, index }: Props) {
   const dispatch = useDispatch();
   return (
-    <div
-      key={data.title}
-      className=" w-full 840:w-[800px] 1250:w-full h-auto p-[10px]   animate-slideup    "
-    >
+    <div className=" w-full 840:w-[800px] 1250:w-full h-auto p-[10px]   animate-slideup    ">
       <div className="w-full h-auto rounded-[14px]   backdrop-blur-sm  relative overflow-hidden  border bg-[#0c0728] hover:bg-[#0e082e] border-[#401f788e] p-[13px] ">
         <div
           className={`w-[200px] h-[20px] ${

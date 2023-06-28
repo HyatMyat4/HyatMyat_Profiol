@@ -15,10 +15,7 @@ function Projectcard_Web({ data, index }: Props) {
   const dispatch = useDispatch();
   return (
     <div className=" w-auto h-auto">
-      <div
-        key={data.title}
-        className="w-auto h-auto mb-[20px] 840:mb-0 hidden 1300:flex  "
-      >
+      <div className="w-auto h-auto mb-[20px] 840:mb-0 hidden 1300:flex  ">
         <div className=" w-full 840:w-[800px] 1250:w-[390px] h-auto 1250:h-[440px] rounded-[14px] relative overflow-hidden   backdrop-blur-sm  m-0 840:m-[10px]  border bg-[#0c0728] hover:bg-[#0e082e] border-[#401f788e] p-[13px] ">
           <div
             className={`w-[200px] h-[20px] ${
@@ -28,7 +25,7 @@ function Projectcard_Web({ data, index }: Props) {
           >
             in development⏳
           </div>
-          <div className=" relative group overflow-hidden    rounded-[10px]">
+          <div className="border-[2px] p-[6px] border-[#343434] relative group overflow-hidden  bg-black  rounded-[7px]">
             <div
               onClick={() =>
                 dispatch(
@@ -42,7 +39,7 @@ function Projectcard_Web({ data, index }: Props) {
               width={1920}
               height={1080}
               alt="image"
-              className="rounded "
+              className="rounded border border-[#343434]"
             />
           </div>
           <Link href={`/Project/${data.video_key}`}>
@@ -73,13 +70,13 @@ function Projectcard_Web({ data, index }: Props) {
           >
             in development⏳
           </div>
-          <div className="  overflow-hidden   rounded-[7px]">
+          <div className=" border-[2px] p-[6px] bg-black border-[#343434]  rounded-[7px]">
             <Image
               src={data?.project_image}
               width={1920}
               height={1080}
               alt="image"
-              className="rounded-[15px] p-[5px]  "
+              className="rounded border p-[5px] border-[#343434]  "
             />
           </div>
           <div>
