@@ -25,21 +25,18 @@ function Projectcard_Web({ data, index }: Props) {
           >
             in development⏳
           </div>
-          <div className="border-[2px] p-[6px] border-[#343434] relative group overflow-hidden  bg-black  rounded-[7px]">
-            <div
+          <div className="  rounded-[7px]">
+            <Image
               onClick={() =>
                 dispatch(
                   set_Image_src({ data: data?.project_image, isMobile: false })
                 )
               }
-              className=" w-full h-full absolute z-40 group-hover:bg-[#0000006d]  "
-            ></div>
-            <Image
               src={data?.project_image}
               width={1920}
               height={1080}
               alt="image"
-              className="rounded border border-[#343434]"
+              className="rounded "
             />
           </div>
           <Link href={`/Project/${data.video_key}`}>
