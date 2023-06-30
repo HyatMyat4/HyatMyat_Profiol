@@ -32,10 +32,10 @@ function Section_5() {
             />
           )
         )}
-        <div className=" w-full 840:w-[800px] 1250:w-full flex flex-col h-auto p-[10px] animate-slideup ">
+        <div className=" w-full 840:w-[800px] 1250:w-full flex flex-col 1250:flex-row h-auto p-0 1250:p-[10px] animate-slideup ">
           <div
             className="w-full h-auto rounded-[18px]   backdrop-blur-sm  relative overflow-hidden  border bg-[#0c0728]
-         hover:bg-[#0e082e] border-[#401f788e] p-[13px] "
+         hover:bg-[#0e082e] border-[#401f788e] p-[13px] mr-0 1250:mr-[20px] mt-[20px] 1250:mt-0  "
           >
             <Image
               src={"/Frame 1 (1).png"}
@@ -65,11 +65,9 @@ function Section_5() {
               </a>
             </div>
           </div>
-        </div>
-        <div className=" w-full 840:w-[800px] 1250:w-full flex flex-col h-auto p-[10px] animate-slideup ">
           <div
             className="w-full h-auto rounded-[18px]   backdrop-blur-sm  relative overflow-hidden  border bg-[#0c0728]
-         hover:bg-[#0e082e] border-[#401f788e] p-[13px] "
+         hover:bg-[#0e082e] border-[#401f788e] p-[13px] mt-[20px] 1250:mt-0 "
           >
             <Image
               src={"/Frame 1.png"}
@@ -100,10 +98,11 @@ function Section_5() {
             </div>
           </div>
         </div>
-        <div className=" w-full 840:w-[800px] 1250:w-full flex flex-col h-auto p-[10px] animate-slideup ">
+
+        <div className=" w-full 840:w-[800px] 1250:w-full flex flex-col 1250:flex-row h-auto p-0 1250:p-[10px] animate-slideup ">
           <div
             className="w-full h-auto rounded-[18px]   backdrop-blur-sm  relative overflow-hidden  border bg-[#0c0728]
-         hover:bg-[#0e082e] border-[#401f788e] p-[13px] "
+         hover:bg-[#0e082e] border-[#401f788e] p-[13px] mt-[20px] 1250:mt-0 "
           >
             <Image
               src={"/Frame 1 (2).png"}
@@ -122,7 +121,7 @@ function Section_5() {
                   className="w-[20px] h-auto cursor-pointer mr-[15px] "
                 />
                 <div className=" text-gray-200 font-bold text-[16px] 550:text-[18px] 720:text-[22px]">
-                  Deliveroo Figma Desing
+                  Deliverroo Figma Desing
                 </div>
               </div>
               <a
