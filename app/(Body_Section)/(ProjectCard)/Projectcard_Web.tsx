@@ -67,13 +67,13 @@ function Projectcard_Web({ data, index }: Props) {
           >
             in development⏳
           </div>
-          <div className=" border-[2px] p-[6px] bg-black border-[#343434]  rounded-[7px]">
+          <div className="    rounded-[7px]">
             <Image
               src={data?.project_image}
               width={1920}
               height={1080}
               alt="image"
-              className="rounded border p-[5px] border-[#343434]  "
+              className="rounded-[10px]  p-[5px]   "
             />
           </div>
           <div>
