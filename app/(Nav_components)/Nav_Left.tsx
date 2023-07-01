@@ -11,7 +11,10 @@ function Nav_Left() {
         alt="Hyat Myat"
         className="  cursor-pointer  hover:animate-slowspin  "
       />
-      <span id="cursive" className=" font-bold  text-gray-300  ml-[10px] ">
+      <span
+        id="cursive"
+        className=" font-bold  text-gray-300  ml-[10px] hidden 310:flex "
+      >
         Hyat Myat
       </span>
     </Link>

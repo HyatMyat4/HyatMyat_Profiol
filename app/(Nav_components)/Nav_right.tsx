@@ -21,7 +21,7 @@ function Nav_right() {
       ) : (
         <div
           onClick={() => dispatch(setMobileMenu(true))}
-          className=" mr-[20px] cursor-pointer flex 860:hidden animate-slowfade "
+          className=" mr-[8px] 310:mr-[20px] cursor-pointer flex 860:hidden animate-slowfade "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

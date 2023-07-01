@@ -24,7 +24,7 @@ function Projectpagebody() {
   return (
     <div className="w-full h-screen">
       {Search_query.length ? (
-        <div className=" w-full h-auto flex flex-row items-center justify-center  1280:justify-between flex-wrap p-[10px] 840:p-0  ">
+        <div className=" w-full h-auto flex flex-row items-center justify-center   flex-wrap p-[10px] 840:p-0  ">
           {Search_data.map((data: Project_data, index: any) =>
             data.Type === "React Native" ? (
               <Projectcard_Mobile
@@ -44,7 +44,7 @@ function Projectpagebody() {
           )}
         </div>
       ) : NavTag === "All" ? (
-        <div className=" w-full h-auto flex flex-row items-center  justify-center  1280:justify-between flex-wrap p-[10px] 840:p-0  ">
+        <div className=" w-full h-auto flex flex-row  items-center  justify-center  flex-wrap p-[10px] 840:p-0  ">
           {Project.map((data: Project_data, index: any) =>
             data.Type === "React Native" ? (
               <Projectcard_Mobile
@@ -64,7 +64,7 @@ function Projectpagebody() {
           )}
         </div>
       ) : NavTag === "server" ? (
-        <div className="w-full h-auto flex flex-row items-center justify-center  1280:justify-between flex-wrap p-[10px] 840:p-0">
+        <div className="w-full h-auto flex flex-row items-center justify-center   flex-wrap p-[10px] 840:p-0">
           {onlyReactProject.map((data: Project_data, index: any) => (
             <Server_card key={data.title + index} data={data} />
           ))}
@@ -73,7 +73,7 @@ function Projectpagebody() {
         <div
           className={` ${
             NavTag === "All" ? " hidden " : ""
-          } w-full h-auto flex flex-row items-center justify-center  1280:justify-between flex-wrap p-[10px] 840:p-0  `}
+          } w-full h-auto flex flex-row items-center justify-center   flex-wrap p-[10px] 840:p-0  `}
         >
           {onlyReactProject.map((data: Project_data, index: any) =>
             data.Type === "React Native" ? (

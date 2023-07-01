@@ -9,7 +9,7 @@ function Project() {
         <div className="w-auto h-full hidden 420:flex flex-row items-center  ">
           <span className=" text-gray-200 font-bold text-[27px]">Projects</span>
         </div>
-        <div className="w-full 420:w-auto h-auto">
+        <div className="w-full 420:w-auto h-auto mx-[5px] 420:mx-0">
           <Input />
         </div>
       </div>
