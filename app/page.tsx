@@ -16,8 +16,3 @@ export default function Home() {
     </main>
   );
 }
-
-/*
-FACEBOOK_CLIENT_ID=967422474504758
-FACEBOOK_CLIENT_SECRET=18b51da3657d394708ff6850bc94554b
-*/
