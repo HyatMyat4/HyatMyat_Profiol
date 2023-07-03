@@ -24,6 +24,11 @@ function SignupProvider() {
           providers_Name={"facebook"}
         />
         <AuthButtons
+          AuthImage={"/5296765_camera_instagram_instagram logo_icon.png"}
+          AuthName={"Sign up with Instagram"}
+          providers_Name={"instagram"}
+        />
+        <AuthButtons
           AuthImage={"/google.png"}
           AuthName={"Sign up with Google"}
           providers_Name={"google"}
